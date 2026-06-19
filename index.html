@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Géo-IA 2AC – Accueil</title>
+    <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">
+                <a class="brand-logo" href="index.html" aria-label="Accueil">
+                    <img src="images/globe.png" alt="logo">
+                </a>
+                <div>
+                    <p class="eyebrow">Renouvellement de l’enseignement de la géologie</p>
+                    <h1>Géo-FACILE</h1>
+                </div>
+            </div>
+
+            <nav class="topnav">
+                <a href="index.html" class="active">ACCUEIL</a>
+                <a href="cours.html">COURS</a>
+                <a href="exercices.html">EXERCICES</a>
+                <a href="glossaire.html">GLOSSAIRE</a>
+            </nav>
+
+            <div class="status-bar">
+                <span class="score-label">Score : <strong>120 pts</strong></span>
+                <span class="progress-label">0%</span>
+            </div>
+        </header>
+ </div>
+        <main>
+            <div class ="content-card">
+            <section class="hero" id="accueil">
+                <div class="hero-copy">
+                    <p class="eyebrow">Découvre les secrets de la Terre</p>
+                    <h2>Un voyage interactif au cœur de la géologie avec l'IA</h2>
+                    <p>Explore les modules, pratique avec des quiz et trouve une aide intelligente pour chaque notion.</p>
+                    <a class="btn btn-primary" href="cours.html">🚀COMMENCER LE COURS</a>
+   <p ><a class="explore-link" href="https://www.mozaweb.com/Extra-Scenes_3D-La_structure_de_la_Terre_niveau_intermediaire-12026" target="_blank" rel="noopener noreferrer">Explorer le monde en profondeur</a></p>  
+
+                </div>
+
+                
+                </div>
+                <div class="hero-illustration" style="margin-right:100px ;">
+                     <iframe width="680px" height="680px" frameborder="0" scrolling="no" allowfullscreen src="https://arcg.is/1zOreS1"></iframe>
+                    </div>
+            </section>
+
+           
+</div>
+            <aside id="assistantPanel" class="assistant-ai hidden">
+                <div class="assistant-header">
+                    <h3>Mon Tuteur IA</h3>
+                    <button class="assistant-close" onclick="toggleChat()" aria-label="Fermer le chat">✕</button>
+                </div>
+                <div class="assistant-chat">
+                    <div class="message ai">IA : Bonjour ! Je suis là pour aider à comprendre la géologie. Que veux-tu savoir ?</div>
+                    <div class="message user">Élève : C'est quoi une dorsale ?</div>
+                    <div class="message ai">IA : Imagine une cicatrice au fond de l'océan d'où sort du magma pour créer du nouveau plancher !</div>
+                </div>
+                <form class="assistant-form" onsubmit="sendAIMessage(event)">
+                    <input id="questionIA" type="text" placeholder="Tape ta question ici...">
+                    <button type="submit" aria-label="Envoyer">→</button>
+                </form>
+                <div id="reponseIA" class="assistant-response"></div>
+            </aside>
+
+            <button class="chat-toggle" onclick="toggleChat()" aria-label="Ouvrir le chat IA">Chat IA</button>
+<section class="modules" id="modules">
+                <div class="section-header">
+                    <h2 style="text-align: center;">Nos modules de cours</h2>
+                </div>
+                <div class="module-grid">
+                    <article class="module-card complete" style="width: 400px  ;height:500px ;TEXT-ALIGN: CENTER;
+                    background-image: url(images/Gemini_Generated_Image_t44lgft44lgft44l.png); background-size: cover; background-position: center;">
+                        <span class="module-badge">Module 1</span>
+                        <h3>Structure de la Terre</h3>
+                        <p><span class="status-icon">✓</span> Disponible</p>
+                        <a class="btn btn-primary" href="STRUCTURE.html">Voir le cours</a>
+                    </article>
+
+                    <article class="module-card current" style="width: 400px  ;height:500px ;TEXT-ALIGN: CENTER;">
+                        <span class="module-badge">Module 2</span>
+                        <h3>Volcanisme</h3>
+                        <p><span class="status-icon">▶</span> Disponible</p>
+                        <a class="btn btn-primary" href="volcan.html">Voir le cours</a>
+                    </article>
+
+                    <article class="module-card locked" style="width: 400px  ;height:500px ; TEXT-ALIGN: CENTER;
+                    background-image: url(images/6066389f-e9a1-47a4-8978-f572a8a541db.jpg); background-size: cover; background-position: center;">
+                        <span class="module-badge">Module 3</span>
+                        <h3>Séisme </h3>
+                        <p><span class="status-icon">▶</span> Disponible</p>
+                        <a class="btn btn-primary" href="seisme.html">Voir le cours</a>
+                    </article>
+                     <article class="module-card locked" style="width: 400px; height: 500px; text-align: center; background-image: url('images/tectonique.png'); background-size: cover; background-position: center;">
+                        <span class="module-badge">Module 4</span>
+                        <h3>Tectonique des plaques</h3>
+                        <p><span class="status-icon">▶</span> Disponible</p>
+                        <a class="btn btn-primary" href="tectpla.html">Voir le cours</a>
+                    </article>
+
+                   <article class="module-card locked"
+    style="width: 400px; height: 500px; text-align: center;
+    background-image: url('images/deformation.jpg');
+    background-size: cover; background-position: center;">
+
+    <span class="module-badge">Module 5</span>
+
+    <h3>Déformations tectoniques</h3>
+
+    <p>
+        <span class="status-icon">⛔</span> Cours non disponible
+    </p>
+
+    <a class="btn btn-primary disabled"
+       href="#"
+       style="pointer-events: none; opacity: 0.6;">
+        Voir le cours
+    </a>
+
+</article>
+
+
+<article class="module-card locked"
+    style="width: 400px; height: 500px; text-align: center;
+    background-image: url('images/montagne.jpg');
+    background-size: cover; background-position: center;">
+
+    <span class="module-badge">Module 6</span>
+
+    <h3>Chaînes de montagnes</h3>
+
+    <p>
+        <span class="status-icon">⛔</span> Cours non disponible
+    </p>
+
+    <a class="btn btn-primary disabled"
+       href="#"
+       style="pointer-events: none; opacity: 0.6;">
+        Voir le cours
+    </a>
+
+</article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Projet pédagogique – SVT 2AC – Usage responsable de l’IA</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/* Page-specific stylesheet for volcan.html */
+@import url('style.css');
+
+/* volcan page overrides */
+.volcano-animation { min-height: 260px; }
+.ppt-box, .iframe-wrapper { max-width: 880px; }
+.content-card1{width: 1000px;background-image: url(images/Gemini_Generated_Image_wzuuu4wzuuu4wzuu.png); 
+background-size: cover;background-position: center;height: 550px;margin-left: 200px;}
+.content-card{width: 1000px;height: 400px; ;}
+.content-cardii{width: 1000px;height: 400px; position: absolute;top: 2080px;left: 330px;
+     background-image: url(images/Gemini_Generated_Image_nb88grnb88grnb88.png); background-size: cover;background-position: center;}

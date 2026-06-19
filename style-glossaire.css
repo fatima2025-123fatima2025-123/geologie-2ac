@@ -1,0 +1,20 @@
+/* Page-specific stylesheet for glossaire.html */
+@import url('style.css');
+
+/* glossary-specific tweaks */
+.content-card h3 { color: #eaf3ff; }
+.content-card{width: 1000px;}
+/* Styles du tableau du dictionnaire */
+.table-wrap { overflow-x: auto; }
+.glossary-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+.glossary-table th, .glossary-table td { border: 1px solid #ccc; padding: 0.5rem; vertical-align: top; }
+.glossary-table thead th { background: #f4f7fb; color: #333; text-align: left; }
+.glossary-table caption { caption-side: top; text-align: left; padding-bottom: 0.5rem; font-weight: bold; }
+.glossary-table td.arabic { font-family: 'Noto Naskh Arabic', 'Arial', sans-serif; direction: rtl; text-align: right; }
+
+@media (max-width: 680px) {
+	.glossary-table thead { display: none; }
+	.glossary-table, .glossary-table tbody, .glossary-table tr, .glossary-table td { display: block; width: 100%; }
+	.glossary-table td { box-sizing: border-box; padding: 0.5rem; border-bottom: 1px solid #ddd; }
+	.glossary-table td::before { content: attr(data-label); font-weight: 600; display: block; margin-bottom: 0.3rem; }
+}

@@ -1,0 +1,6 @@
+/* Page-specific stylesheet for index.html */
+@import url('style.css');
+
+/* index-specific overrides (hero tweaks) */
+.hero-copy h2 { font-size: 2rem; }
+.hero-illustration iframe { border-radius: 20px; }

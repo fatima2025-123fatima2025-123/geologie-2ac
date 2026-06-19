@@ -1,0 +1,38 @@
+/* Page-specific stylesheet for cours.html */
+@import url('style.css');
+
+/* Layout for cours page */
+.course-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	align-items: start;
+}
+
+.course-image img {
+	width: 100%;
+	max-width: 520px;
+	border-radius: 16px;
+	display: block;
+}
+
+.composition-list {
+	margin-top: 12px;
+	list-style: inside disc;
+	color: #e9f2ff;
+}
+
+.ppt-box { max-width: 780px; }
+.course-video { width: 100%; border-radius: 14px; }
+.animation-placeholder {
+	height: 260px;
+	border-radius: 12px;
+	background: rgba(255,255,255,0.03);
+	display: grid;
+	place-items: center;
+	color: #dbe7ff;
+}
+
+@media (max-width: 900px) {
+	.course-grid { grid-template-columns: 1fr; }
+}

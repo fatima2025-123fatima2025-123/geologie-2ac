@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices – Géo-IA 2AC</title>
+    <link rel="stylesheet" href="style-exercices.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">
+                <a class="brand-logo" href="index.html" aria-label="Accueil">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <div>
+                    <p class="eyebrow">Exercices pratiques</p>
+                    <h1>Quiz géologique</h1>
+                </div>
+            </div>
+
+            <nav class="topnav">
+                <a href="index.html">ACCUEIL</a>
+                <a href="cours.html">COURS</a>
+                <a href="exercices.html" class="active">EXERCICES</a>
+                <a href="glossaire.html">GLOSSAIRE</a>
+            </nav>
+
+            <div class="status-bar">
+                <span class="score-label">Score : <strong>120 pts</strong></span>
+                <span class="progress-label">5%</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="content-card" style="width: 1000px;">
+                <h2>QCM : Structure de la Terre</h2>
+                <p >Réponds aux questions pour vérifier ta compréhension.</p>
+                <p class="score-display">Score total : <span id="totalScore">0</span> / <span id="totalQuestions">0</span></p>
+            </section>
+
+            <section class="content-section"style="">
+                <div class="content-card question" data-question-id="1" style="width: 1000px;">
+                    <h3>Question 1</h3>
+                    <p>Quelle est la couche la plus externe de la Terre ?</p>
+                    <div class="quiz-buttons">
+                        <button data-correct="false" onclick="checkAnswer(this)">Le noyau</button>
+                        <button data-correct="true" onclick="checkAnswer(this)">La croûte</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Le manteau</button>
+                    </div>
+                    <p class="feedback" aria-live="polite"></p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-card question" data-question-id="2" style="width: 1000px;">
+                    <h3>Question 2</h3>
+                    <p>Que contient le noyau de la Terre ?</p>
+                    <div class="quiz-buttons">
+                        <button data-correct="true" onclick="checkAnswer(this)">Fer et nickel</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Eau et glace</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Air et gaz</button>
+                    </div>
+                    <p class="feedback" aria-live="polite"></p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-card question" data-question-id="29" style="width: 1000px;">
+                    <h3>Question 29</h3>
+                    <p>Quelle roche est riche en silice et courante dans les continents ?</p>
+                    <div class="quiz-buttons">
+                        <button data-correct="true" onclick="checkAnswer(this)">Le granit</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Le basalte</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Le gabbro</button>
+                    </div>
+                    <p class="feedback" aria-live="polite"></p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-card question" data-question-id="30" style="width: 1000px;">
+                    <h3>Question 30</h3>
+                    <p>Quel événement suit généralement la subduction d'une plaque océanique sous une plaque continentale ?</p>
+                    <div class="quiz-buttons">
+                        <button data-correct="true" onclick="checkAnswer(this)">Formation de volcans et de chaînes plissées</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Ouverture d'une dorsale océanique</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Évaporation des océans</button>
+                    </div>
+                    <p class="feedback" aria-live="polite"></p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-card question" data-question-id="31" style="width: 1000px;">
+                    <h3>Question 31</h3>
+                    <p>Quelle est la principale méthode utilisée pour estimer la magnitude d'un séisme ?</p>
+                    <div class="quiz-buttons">
+                        <button data-correct="false" onclick="checkAnswer(this)">Mesure de la profondeur du foyer</button>
+                        <button data-correct="true" onclick="checkAnswer(this)">Analyse des amplitudes sur un sismogramme (échelle de magnitude)</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Observation visuelle des dégâts</button>
+                    </div>
+                    <p class="feedback" aria-live="polite"></p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-card question" data-question-id="3" style="width: 1000px;">
+                    <h3>Question 3</h3>
+                    <p>Quelle couche est majoritairement solide et se situe entre la croûte et le noyau ?</p>
+                    <div class="quiz-buttons">
+                        <button data-correct="false" onclick="checkAnswer(this)">Croûte</button>
+                        <button data-correct="true" onclick="checkAnswer(this)">Manteau</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Noyau</button>
+                    </div>
+                    <p class="feedback" aria-live="polite"></p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-card question" data-question-id="4" style="width: 1000px;">
+                    <h3>Question 4</h3>
+                    <p>Quelle est la principale cause des séismes à l’échelle mondiale ?</p>
+                    <div class="quiz-buttons">
+                        <button data-correct="true" onclick="checkAnswer(this)">Mouvements relatifs des plaques tectoniques</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Éruptions volcaniques uniquement</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Changements climatiques</button>
+                    </div>
+                    <p class="feedback" aria-live="polite"></p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-card question" data-question-id="5" style="width: 1000px;">
+                    <h3>Question 5</h3>
+                    <p>Qu’est-ce qui déclenche généralement une éruption volcanique ?</p>
+                    <div class="quiz-buttons">
+                        <button data-correct="true" onclick="checkAnswer(this)">Remontée de magma vers la surface</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Le vent météorologique</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">L’érosion des côtes</button>
+                    </div>
+                    <p class="feedback" aria-live="polite"></p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-card question" data-question-id="6" style="width: 1000px;">
+                    <h3>Question 6</h3>
+                    <p>Quel type de bord de plaque est associé à la formation de dorsales océaniques ?</p>
+                    <div class="quiz-buttons">
+                        <button data-correct="true" onclick="checkAnswer(this)">Bord divergent</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Bord convergent</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Bord transformant</button>
+                    </div>
+                    <p class="feedback" aria-live="polite"></p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-card question" data-question-id="7" style="width: 1000px;">
+                    <h3>Question 7</h3>
+                    <p>Quel instrument enregistre les mouvements du sol lors d’un séisme ?</p>
+                    <div class="quiz-buttons">
+                        <button data-correct="true" onclick="checkAnswer(this)">Sismographe</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Baromètre</button>
+                        <button data-correct="false" onclick="checkAnswer(this)">Thermomètre</button>
+                    </div>
+                    <p class="feedback" aria-live="polite"></p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-card">
+                    <button class="btn btn-secondary"  style="color: #0b0b0b; background-color: #007bff; border-color: #007bff;" onclick="resetQuiz()">Réinitialiser le quiz</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Projet pédagogique – SVT 2AC – Usage responsable de l’IA</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
